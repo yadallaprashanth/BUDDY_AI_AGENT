@@ -10,7 +10,7 @@ load_dotenv()
 
 class Assistant(Agent):
     def __init__(self) -> None:
-        # 🔹 Lazy import Google plugin inside __init__, not top-level
+        # Lazy import Google plugin only when instantiated
         from livekit.plugins import google
 
         super().__init__(
