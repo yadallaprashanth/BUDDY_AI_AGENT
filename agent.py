@@ -4,7 +4,7 @@ from livekit.agents import AgentSession, Agent, RoomInputOptions
 from livekit.plugins import (
     noise_cancellation,
 )
-from livekit.plugins import openai
+from livekit.plugins import google
 from prompts import AGENT_INSTRUCTION, SESSION_INSTRUCTION
 from tools import get_weather, search_web, send_email
 load_dotenv()
